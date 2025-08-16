@@ -1,4 +1,4 @@
-🏋️‍♂️ JIM BRO - Fitness & Diet AI Assistant
+#🏋️‍♂️ JIM BRO - Fitness & Diet AI Assistant
 
 
 JIM BRO is a fun and interactive personal fitness and diet assistant powered by AI. Enter your details, select a goal, and get a personalized workout or diet plan instantly!
