@@ -1,84 +1,117 @@
-# 🏋️‍♂️ JIM BRO - Personalized Fitness & Diet Assistant
+🏋️‍♂️ JIM BRO - Fitness & Diet AI Assistant
 
 
+JIM BRO is a fun and interactive personal fitness and diet assistant powered by AI. Enter your details, select a goal, and get a personalized workout or diet plan instantly!
 
-**JIM BRO** is an interactive **web-based fitness and diet assistant** powered by a Large Language Model (LLM). The AI provides **personalized workout and diet plans** based on user inputs like age, weight, height, and fitness goals. It’s designed to motivate users and optimize fitness routines with **BMI-based goal suggestions**.
+🧠 Project Description
 
----
+Plan your fitness journey with AI assistance:
 
-## 🧠 Project Description
+Collects user data: name, age, weight, height
 
-The app guides users through a multi-step wizard:
+Calculates BMI and suggests a suitable goal
 
-1. Enter basic details: **name, age, weight, height**
-2. Select your **fitness goal**: Bulk, Cut, or Maintain
-3. AI suggests your **ideal plan** based on BMI
-4. Generate either a **Workout Plan** or **Diet Plan**
+Generates Workout or Diet Plans based on your goals
 
-The AI responds **directly with detailed plans**, without small talk.
+Designed for quick, actionable, and motivational guidance
 
----
+✨ Features
 
-## ✨ Features
+AI-Powered Plans: Custom workout and diet recommendations
 
-- **Personalized Workout & Diet Plans:** AI-generated plans tailored to your body stats and goals.
-- **BMI-Based Goal Suggestions:** Ensures realistic and healthy fitness goals.
-- **Interactive Wizard Interface:** Step-by-step guided input.
-- **LLM Integration:** Powered by a language model for natural, detailed responses.
-- **Responsive Design:** Modern and clean UI for easy interaction.
+BMI-Based Goal Suggestion: Guides users to healthy targets
 
----
+Interactive Wizard Interface: Step-by-step data entry
 
-## 🧰 Technologies Used
+Fast & Responsive: Minimal wait with clean UI
 
-| Feature               | Implementation                                      |
-|-----------------------|----------------------------------------------------|
-| Backend               | Python, Flask                                      |
-| Frontend              | HTML, CSS, JavaScript                              |
-| AI Integration        | LLM API (configurable via .env)                   |
-| Session Management    | Flask sessions                                     |
-| Environment Variables | Python-dotenv                                     |
-| Styling               | Modern gradient UI, responsive forms              |
+Session Management: Keeps track of current progress
 
----
+🧰 Technologies Used
+Feature	Implementation
+Backend	Python, Flask
+Frontend	HTML, CSS, JavaScript
+AI Integration	LLM API (configurable via .env)
+Session Management	Flask sessions
+Environment Variables	Python-dotenv
+Styling	Modern gradient UI, responsive forms
+🧱 Project Architecture
+Backend
 
-## 🧱 Architecture
+app.py → Initializes Flask application
 
-### Backend
-- **app.py**: Flask app initialization
-- **routes/main.py**: API endpoints (`/api/ask`, `/api/check-goal`)
-- **services/gym_ai.py**: Handles AI requests and responses
+routes/main.py → API endpoints (/api/ask, /api/check-goal)
 
-### Frontend
-- **templates/index.html**: Multi-step wizard interface
-- **static/style.css**: Styling and gradient theme
-- **static/script.js**: Wizard logic, API calls, response handling
+services/gym_ai.py → Handles AI requests and responses
 
-### Environment Variables
-- `.env` file stores **API keys**, **model configuration**, and **secret keys**.
+Frontend
 
----
+templates/index.html → Wizard interface
 
-## 🧩 How it Works
+static/style.css → Styling and theme
 
-1. **User Input Wizard**
-   - Collects user info: name, age, weight, height, fitness goal
-2. **Goal Check**
-   - Calculates BMI and suggests the most suitable goal
-3. **Plan Generation**
-   - Sends a request to LLM API with user info
-   - AI returns a **detailed plan**
-4. **Display**
-   - Plan is shown in a styled response area
-   - Users can repeat the process anytime
+static/script.js → Handles UI interaction and API calls
 
----
+Environment Variables (.env)
 
-## 🎮 Getting Started
+LLM_API_URL → AI endpoint
 
-### Requirements
-- Python 3.8+
-- Flask
-- Requests library
-- LLM API credentials
+LLM_API_KEY → API key
 
+LLM_MODEL → Model to use
+
+LLM_TIMEOUT → API request timeout
+
+SECRET_KEY → Flask session secret
+
+🧩 How it Works
+
+User Wizard: Collects user info and goal
+
+Goal Validation: Suggests suitable goal based on BMI
+
+Plan Generation: Sends user data to LLM API
+
+Response: AI returns a detailed workout or diet plan
+
+Display: Plan shown in the UI; repeat anytime
+
+🎮 Getting Started
+Requirements
+
+Python 3.8+
+
+Flask
+
+Requests library
+
+LLM API credentials
+
+Run the App
+git clone https://github.com/yourusername/jim-bro.git
+cd jim-bro
+python -m venv venv
+source venv/bin/activate      # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+
+
+Open your browser at: http://localhost:5000
+
+🏁 Conclusion
+
+JIM BRO is a demonstration of:
+
+Web development with Flask
+
+Interactive multi-step forms
+
+Integration with AI language models
+
+Personalized fitness & diet guidance
+
+Perfect for beginners and fitness enthusiasts looking for AI-powered recommendations.
+
+🙏 Thank You
+
+Stay fit and motivated! 💪
